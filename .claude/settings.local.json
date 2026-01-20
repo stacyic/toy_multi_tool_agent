@@ -20,7 +20,8 @@
       "Bash(wc:*)",
       "Bash(xargs -I {} bash -c \"echo ''=== {} ==='' && head -15 {}\")",
       "Bash(/tmp/run_test_queries.sh:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(git add:*)"
     ]
   }
 }

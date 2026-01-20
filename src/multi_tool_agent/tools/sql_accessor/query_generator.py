@@ -54,6 +54,16 @@ RULES:
     - CORRECT: strftime('%Y', order_date) = '2025'  -- both TEXT
     - WRONG: strftime('%Y', order_date) = CAST(strftime('%Y', 'now') AS INTEGER) - 1  -- TEXT vs INTEGER fails!
     - For "previous/last calendar year", use: strftime('%Y', date_column) = strftime('%Y', 'now', '-1 year')
+11. CRITICAL - Case-insensitive string comparisons: Database values may be lowercase (e.g., 'delivered' not 'Delivered').
+    - Use LOWER() for status comparisons: WHERE LOWER(status) = 'delivered'
+    - Or use COLLATE NOCASE: WHERE status = 'delivered' COLLATE NOCASE
+12. CRITICAL - For eligibility/policy questions (e.g., "Can I return order X?", "Is order X eligible?"):
+    - RETRIEVE the order details (id, date, status, products) WITHOUT date-based or policy-based filtering
+    - DO NOT add WHERE clauses that filter by return window dates, eligibility criteria, or policy rules
+    - The synthesizer will evaluate eligibility - your job is just to retrieve the raw order data
+    - Example for "Can I return order 471?":
+      CORRECT: SELECT o.id, o.order_date, o.status, p.category FROM orders o JOIN order_items oi ON o.id = oi.order_id JOIN products p ON oi.product_id = p.id WHERE o.id = 471
+      WRONG: SELECT ... WHERE o.id = 471 AND status = 'delivered' AND date(...) <= ... (filtering by eligibility)
 
 OUTPUT FORMAT (JSON):
 {{

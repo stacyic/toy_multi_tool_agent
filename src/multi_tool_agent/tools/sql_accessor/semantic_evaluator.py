@@ -99,6 +99,15 @@ IMPORTANT - BE PRACTICAL, NOT PEDANTIC:
   - "top customers" = by revenue, order count, or other reasonable metric - all are correct
   - "recent orders" = any reasonable time window is acceptable
 
+IMPORTANT - POLICY/ELIGIBILITY QUESTIONS (e.g., "Can I return order X?", "Is X eligible?"):
+- For questions about eligibility, returns, or policy compliance, the SQL's job is ONLY to retrieve the relevant data
+- Policy rules (return windows, eligibility criteria) come from a SEPARATE policy system, NOT from SQL
+- The SQL is CORRECT if it retrieves the order/item details needed to evaluate the policy (id, date, status, category, etc.)
+- DO NOT mark SQL as incorrect because it doesn't filter by policy rules - that's not SQL's job
+- Example: "Can I return order 471?" - SQL that retrieves order 471's details (date, status, products) is CORRECT
+  - The policy evaluation happens AFTER SQL retrieval, using policy documents
+  - SQL should NOT filter by "date within 30 days" or similar policy logic
+
 OUTPUT FORMAT (JSON):
 {{
     "verdict": "correct" | "incorrect" | "partial" | "invalid_question" | "ambiguous",
