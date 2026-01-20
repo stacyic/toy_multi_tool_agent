@@ -1,0 +1,61 @@
+id,name,category,price,stock_level
+1,Traveler T-shirt,Apparel,474.44,202
+2,Classic Hoodie,Apparel,45.48,274
+3,Pro Jacket,Apparel,189.18,29
+4,Ultra Cap,Apparel,115.19,44
+5,All-Weather Socks,Apparel,214.89,123
+6,Pro Pants,Apparel,280.0,30
+7,Pro Laptop,Electronics,474.24,322
+8,Classic Headphones,Electronics,292.77,203
+9,Classic Camera,Electronics,488.36,23
+10,Ultra Smartwatch,Electronics,430.64,148
+11,All-Weather Tablet,Electronics,80.67,60
+12,Premium Charger,Electronics,284.52,349
+13,Lite Backpack,Outdoor,60.49,292
+14,Eco Tent,Outdoor,192.46,280
+15,Pro Sleeping Bag,Outdoor,286.53,316
+16,Eco Water Bottle,Outdoor,253.23,272
+17,All-Weather Hiking Poles,Outdoor,390.83,238
+18,Compact Lantern,Outdoor,187.17,127
+19,Lite Belt,Accessories,352.5,124
+20,Pro Wallet,Accessories,291.46,268
+21,Compact Sunglasses,Accessories,438.81,373
+22,Compact Watch Strap,Accessories,151.08,37
+23,Pro Keychain,Accessories,260.84,84
+24,Traveler Scarf,Accessories,84.46,250
+25,All-Weather Mug,Home,29.2,342
+26,Pro Blanket,Home,384.63,293
+27,Traveler Candle,Home,176.65,179
+28,Compact Throw Pillow,Home,294.14,233
+29,Pro Cookware Set,Home,421.57,483
+30,Premium Coffee Grinder,Home,242.3,340
+31,Premium Hoodie 31,Apparel,327.08,348
+32,All-Weather Smartwatch 32,Accessories,444.64,177
+33,Traveler Sleeping Bag 33,Apparel,92.33,59
+34,Eco Hoodie 34,Accessories,386.42,66
+35,All-Weather Backpack 35,Electronics,459.23,254
+36,Compact Pants 36,Apparel,206.8,142
+37,All-Weather Candle 37,Electronics,433.34,142
+38,All-Weather Charger 38,Accessories,479.28,77
+39,Lite Pants 39,Apparel,123.65,119
+40,Lite Water Bottle 40,Apparel,138.74,2
+41,Ultra Tent 41,Electronics,190.92,289
+42,Ultra Socks 42,Outdoor,475.6,335
+43,Ultra Sleeping Bag 43,Apparel,202.26,204
+44,Compact Cap 44,Accessories,320.79,31
+45,Eco Jacket 45,Electronics,225.9,56
+46,Classic Wallet 46,Outdoor,60.16,290
+47,Pro Lantern 47,Electronics,474.97,314
+48,Eco Jacket 48,Apparel,310.88,76
+49,Traveler Charger 49,Outdoor,242.32,59
+50,Compact Sleeping Bag 50,Accessories,247.07,43
+51,Traveler Cap 51,Electronics,372.76,245
+52,Classic Hiking Poles 52,Electronics,110.55,487
+53,Lite Charger 53,Home,348.12,468
+54,Ultra Mug 54,Apparel,156.05,329
+55,Premium Keychain 55,Apparel,264.0,465
+56,Eco Charger 56,Electronics,270.96,398
+57,Eco Tablet 57,Home,310.47,403
+58,Eco Blanket 58,Electronics,410.97,378
+59,Ultra Laptop 59,Electronics,251.45,374
+60,Premium T-shirt 60,Apparel,241.39,99

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(python -c:*)",
+      "Bash(python3:*)",
+      "Bash(tree:*)",
+      "Bash(PYTHONPATH=src python3:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(.venv/bin/python3:*)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(/Users/stacycheng/multi_tool_agent/.venv/bin/python -m pytest:*)",
+      "Bash(/Users/stacycheng/multi_tool_agent/.venv/bin/python -m ruff check:*)",
+      "Bash(sqlite3:*)",
+      "Bash(wc:*)",
+      "Bash(xargs -I {} bash -c \"echo ''=== {} ==='' && head -15 {}\")",
+      "Bash(/tmp/run_test_queries.sh:*)",
+      "Bash(git checkout:*)"
+    ]
+  }
+}

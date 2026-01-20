@@ -1,0 +1,92 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-01-19T17:08:46.562364",
+  "items": [
+    {
+      "id": "d30cce70",
+      "question": "What is Alex's email and phone number?",
+      "generated_sql": "SELECT email, phone FROM customers WHERE name LIKE '%Alex%' LIMIT 100",
+      "reason": "ambiguous_question",
+      "status": "pending",
+      "semantic_evaluation": {
+        "verdict": "ambiguous",
+        "confidence": 0.5,
+        "reasoning": "The SQL query is technically correct and retrieves the email and phone number of customers with 'Alex' in their name. However, the question is ambiguous because 'Alex' could refer to multiple customers in the database. The query returns multiple results, which indicates that there are multiple customers with 'Alex' in their name.",
+        "issues": [
+          "The question uses a partial name ('Alex') which could match multiple customers."
+        ],
+        "suggestions": [
+          "The user should provide a full name to avoid ambiguity. For example, 'Alex Johnson' instead of 'Alex'."
+        ],
+        "question_clarity_score": 0.4,
+        "is_answerable": true
+      },
+      "execution_result": "Results (11 rows):\n\nemail       | phone       \n------------+-------------\n***@***.com | ***-***-9282\n***@***.com | ***-***-5840\n***@***.com | ***-***-1302\n***@***.com | ***-***-9240\n***@***.com | ***-",
+      "error_message": null,
+      "created_at": "2026-01-19T17:06:35.401451",
+      "updated_at": "2026-01-19T17:06:35.401451",
+      "session_id": null,
+      "user_context": null,
+      "resolution_notes": null,
+      "resolved_sql": null,
+      "resolved_by": null,
+      "resolved_at": null,
+      "similar_questions": [],
+      "occurrence_count": 1
+    },
+    {
+      "id": "4ceb33a4",
+      "question": "Does customer Alex qualify for membership?",
+      "generated_sql": "SELECT customers.name, COUNT(orders.id) AS order_count FROM customers LEFT JOIN orders ON customers.id = orders.customer_id WHERE customers.name LIKE '%Alex%' GROUP BY customers.id HAVING COUNT(orders.id) >= 10 LIMIT 100",
+      "reason": "semantic_mismatch",
+      "status": "pending",
+      "semantic_evaluation": {
+        "verdict": "incorrect",
+        "confidence": 0.9,
+        "reasoning": "The SQL query is trying to determine if a customer named Alex has made 10 or more orders, which seems to be the criteria for membership. However, the question does not provide any criteria for membership, so it's impossible to determine if the query is correct without this information. Additionally, the query is using a partial name, which could match multiple customers.",
+        "issues": [
+          "The question does not provide criteria for membership",
+          "The query uses a partial name, which could match multiple customers"
+        ],
+        "suggestions": [
+          "The user should provide criteria for membership",
+          "The user should provide a full name to avoid ambiguity"
+        ],
+        "question_clarity_score": 0.3,
+        "is_answerable": false
+      },
+      "execution_result": "No results found.",
+      "error_message": null,
+      "created_at": "2026-01-19T17:07:16.593577",
+      "updated_at": "2026-01-19T17:07:16.593577",
+      "session_id": null,
+      "user_context": null,
+      "resolution_notes": null,
+      "resolved_sql": null,
+      "resolved_by": null,
+      "resolved_at": null,
+      "similar_questions": [],
+      "occurrence_count": 1
+    },
+    {
+      "id": "d42fcf3f",
+      "question": "Top 5 customers by spend in the last 7 days, including email.",
+      "generated_sql": "SELECT c.name, c.email, SUM(o.total_amount) AS total_spent FROM customers c JOIN orders o ON c.id = o.customer_id WHERE date(o.order_date) >= date('now', '-7 days') GROUP BY c.id, c.name, c.email ORDER BY total_spent DESC LIMIT 5",
+      "reason": "repeated_failures",
+      "status": "pending",
+      "semantic_evaluation": null,
+      "execution_result": null,
+      "error_message": "Validation errors:\n- Unknown column: 'total_spent'\n\nValid tables: customers, order_items, orders, products",
+      "created_at": "2026-01-19T17:08:46.562270",
+      "updated_at": "2026-01-19T17:08:46.562270",
+      "session_id": null,
+      "user_context": null,
+      "resolution_notes": null,
+      "resolved_sql": null,
+      "resolved_by": null,
+      "resolved_at": null,
+      "similar_questions": [],
+      "occurrence_count": 1
+    }
+  ]
+}

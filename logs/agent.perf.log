@@ -1,0 +1,217 @@
+16:34:14 | INFO | [PERF] request_id=f10fb9ff | START | query=How many VIP customers do we have?...
+16:34:16 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+16:34:21 | INFO | [SQL] attempt_1: OK
+16:34:23 | INFO | [PERF] request_id=f10fb9ff | total=9312ms | SUCCESS
+16:34:23 | INFO |   ├─ routing: 2264ms
+16:34:23 | INFO |   ├─ policy_search: 394ms
+16:34:23 | INFO |   ├─ sql_execution: 4613ms
+16:34:23 | INFO |   └─ synthesis: 2038ms
+16:49:04 | INFO | [PERF] request_id=3821876c | START | query=How many orders were placed in the last 30 days, and what’s ...
+16:49:06 | INFO | [ROUTING] selected_tools=['sql_accessor']
+16:49:11 | INFO | [SQL] attempt_1: OK
+16:49:11 | INFO | [PERF] request_id=3821876c | total=6818ms | SUCCESS
+16:49:11 | INFO |   ├─ routing: 2337ms
+16:49:11 | INFO |   ├─ sql_execution: 4479ms
+16:49:11 | INFO |   └─ synthesis: 0ms
+17:06:32 | INFO | [PERF] request_id=5b119ce3 | START | query=Does customer Alex qualify for VIP?...
+17:06:37 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+17:06:55 | INFO | [SQL] attempt_1: OK
+17:06:55 | INFO | [PERF] request_id=5b119ce3 | total=22935ms | SUCCESS
+17:06:55 | INFO |   ├─ routing: 4875ms
+17:06:55 | INFO |   ├─ policy_search: 538ms
+17:06:55 | INFO |   ├─ sql_execution: 17519ms
+17:06:55 | INFO |   └─ synthesis: 2ms
+17:08:28 | INFO | [PERF] request_id=7c3ad938 | START | query=Order 1042 arrived 45 days ago—can I still return it?
+...
+17:08:33 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+17:08:43 | INFO | [SQL] attempt_1: OK
+17:08:45 | INFO | [PERF] request_id=7c3ad938 | total=16774ms | SUCCESS
+17:08:45 | INFO |   ├─ routing: 5139ms
+17:08:45 | INFO |   ├─ policy_search: 335ms
+17:08:45 | INFO |   ├─ sql_execution: 9564ms
+17:08:45 | INFO |   └─ synthesis: 1733ms
+17:09:47 | INFO | [PERF] request_id=17e29989 | START | query=Can I still return order 471...
+17:09:50 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+17:09:54 | INFO | [SQL] attempt_1: OK
+17:09:56 | INFO | [PERF] request_id=17e29989 | total=9101ms | SUCCESS
+17:09:56 | INFO |   ├─ routing: 2460ms
+17:09:56 | INFO |   ├─ policy_search: 505ms
+17:09:56 | INFO |   ├─ sql_execution: 4207ms
+17:09:56 | INFO |   └─ synthesis: 1926ms
+15:01:24 | INFO | [PERF] request_id=2685975a | START | query=How many VIP customers do we have?...
+15:01:28 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:01:33 | INFO | [SQL] attempt_1: OK
+15:01:36 | INFO | [PERF] request_id=2685975a | total=11563ms | SUCCESS
+15:01:36 | INFO |   ├─ routing: 3659ms
+15:01:36 | INFO |   ├─ policy_search: 1660ms
+15:01:36 | INFO |   ├─ sql_execution: 3384ms
+15:01:36 | INFO |   └─ synthesis: 2855ms
+15:06:57 | INFO | [PERF] request_id=a760ad61 | START | query=How many VIP customers do we have?...
+15:06:59 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:07:04 | INFO | [SQL] attempt_1: OK
+15:07:06 | INFO | [PERF] request_id=a760ad61 | total=9348ms | SUCCESS
+15:07:06 | INFO |   ├─ routing: 2670ms
+15:07:06 | INFO |   ├─ policy_search: 1017ms
+15:07:06 | INFO |   ├─ sql_execution: 3990ms
+15:07:06 | INFO |   └─ synthesis: 1670ms
+15:09:01 | INFO | [PERF] request_id=79f9651e | START | query=How many VIP customers do we have?...
+15:09:05 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:09:15 | INFO | [SQL] attempt_1: OK
+15:09:17 | INFO | [PERF] request_id=79f9651e | total=15721ms | SUCCESS
+15:09:17 | INFO |   ├─ routing: 3531ms
+15:09:17 | INFO |   ├─ policy_search: 182ms
+15:09:17 | INFO |   ├─ sql_execution: 10016ms
+15:09:17 | INFO |   └─ synthesis: 1992ms
+15:09:27 | INFO | [PERF] request_id=912c2717 | START | query=How many VIP customers do we have?...
+15:09:30 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:09:41 | INFO | [SQL] attempt_1: OK
+15:09:43 | INFO | [PERF] request_id=912c2717 | total=16586ms | SUCCESS
+15:09:43 | INFO |   ├─ routing: 2936ms
+15:09:43 | INFO |   ├─ policy_search: 1296ms
+15:09:43 | INFO |   ├─ sql_execution: 10336ms
+15:09:43 | INFO |   └─ synthesis: 2016ms
+15:10:16 | INFO | [PERF] request_id=b5990478 | START | query=How many VIP customers do we have?...
+15:10:19 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:10:27 | INFO | [SQL] attempt_1: OK
+15:10:30 | INFO | [PERF] request_id=b5990478 | total=13723ms | SUCCESS
+15:10:30 | INFO |   ├─ routing: 2684ms
+15:10:30 | INFO |   ├─ policy_search: 227ms
+15:10:30 | INFO |   ├─ sql_execution: 7707ms
+15:10:30 | INFO |   └─ synthesis: 3103ms
+15:11:14 | INFO | [PERF] request_id=7685124a | START | query=How many VIP customers do we have?...
+15:11:19 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:11:28 | INFO | [SQL] attempt_1: OK
+15:11:31 | INFO | [PERF] request_id=7685124a | total=16426ms | SUCCESS
+15:11:31 | INFO |   ├─ routing: 4947ms
+15:11:31 | INFO |   ├─ policy_search: 196ms
+15:11:31 | INFO |   ├─ sql_execution: 8215ms
+15:11:31 | INFO |   └─ synthesis: 3064ms
+15:16:15 | INFO | [PERF] request_id=f4715f74 | START | query=How many VIP customers do we have?...
+15:16:18 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:16:25 | INFO | [SQL] attempt_1: OK
+15:16:26 | INFO | [PERF] request_id=f4715f74 | total=11196ms | SUCCESS
+15:16:26 | INFO |   ├─ routing: 2404ms
+15:16:26 | INFO |   ├─ policy_search: 425ms
+15:16:26 | INFO |   ├─ sql_execution: 6541ms
+15:16:26 | INFO |   └─ synthesis: 1824ms
+15:18:25 | INFO | [PERF] request_id=b0374b38 | START | query=How many VIP customers do we have?...
+15:18:28 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:18:36 | INFO | [SQL] attempt_1: OK
+15:18:38 | INFO | [PERF] request_id=b0374b38 | total=12912ms | SUCCESS
+15:18:38 | INFO |   ├─ routing: 2724ms
+15:18:38 | INFO |   ├─ policy_search: 833ms
+15:18:38 | INFO |   ├─ sql_execution: 7499ms
+15:18:38 | INFO |   └─ synthesis: 1853ms
+15:26:11 | INFO | [PERF] request_id=71f3b92c | START | query=How many orders were placed in the last 30 days, and what's ...
+15:26:13 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:26:23 | INFO | [SQL] attempt_1: OK
+15:26:24 | INFO | [PERF] request_id=71f3b92c | total=12792ms | SUCCESS
+15:26:24 | INFO |   ├─ routing: 2251ms
+15:26:24 | INFO |   ├─ sql_execution: 9620ms
+15:26:24 | INFO |   └─ synthesis: 918ms
+15:26:48 | INFO | [PERF] request_id=cdf2cd29 | START | query=How many orders were placed in the last 30 days, and what's ...
+15:26:51 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:26:59 | INFO | [SQL] attempt_1: OK
+15:27:00 | INFO | [PERF] request_id=cdf2cd29 | total=11736ms | SUCCESS
+15:27:00 | INFO |   ├─ routing: 2318ms
+15:27:00 | INFO |   ├─ sql_execution: 8393ms
+15:27:00 | INFO |   └─ synthesis: 1022ms
+15:27:33 | INFO | [PERF] request_id=c979e68d | START | query=How many orders were placed in last year, and what's the tot...
+15:27:34 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:27:45 | INFO | [SQL] attempt_1: OK
+15:27:46 | INFO | [PERF] request_id=c979e68d | total=13661ms | SUCCESS
+15:27:46 | INFO |   ├─ routing: 1635ms
+15:27:46 | INFO |   ├─ sql_execution: 10229ms
+15:27:46 | INFO |   └─ synthesis: 1794ms
+15:29:44 | INFO | [PERF] request_id=69e88dd0 | START | query=How many orders were placed in last year, and what's the tot...
+15:29:46 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:29:57 | INFO | [SQL] attempt_1: OK
+15:29:59 | INFO | [PERF] request_id=69e88dd0 | total=15353ms | SUCCESS
+15:29:59 | INFO |   ├─ routing: 1812ms
+15:29:59 | INFO |   ├─ sql_execution: 11602ms
+15:29:59 | INFO |   └─ synthesis: 1937ms
+15:30:41 | INFO | [PERF] request_id=636e499c | START | query=How many orders were placed in last year, and what's the tot...
+15:30:44 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:30:53 | INFO | [SQL] attempt_1: OK
+15:30:54 | INFO | [PERF] request_id=636e499c | total=13391ms | SUCCESS
+15:30:54 | INFO |   ├─ routing: 2846ms
+15:30:54 | INFO |   ├─ sql_execution: 9247ms
+15:30:54 | INFO |   └─ synthesis: 1296ms
+15:31:02 | INFO | [PERF] request_id=6b029d2e | START | query=How many VIP customers do we have?...
+15:31:04 | INFO | [ROUTING] selected_tools=['policy_accessor', 'sql_accessor']
+15:31:12 | INFO | [SQL] attempt_1: OK
+15:31:15 | INFO | [PERF] request_id=6b029d2e | total=13130ms | SUCCESS
+15:31:15 | INFO |   ├─ routing: 2287ms
+15:31:15 | INFO |   ├─ policy_search: 208ms
+15:31:15 | INFO |   ├─ sql_execution: 7742ms
+15:31:15 | INFO |   └─ synthesis: 2891ms
+15:32:12 | INFO | [PERF] request_id=bfb28a1a | START | query=How many orders were placed in the previous calendar year, a...
+15:32:15 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:32:28 | INFO | [SQL] attempt_1: OK
+15:32:30 | INFO | [PERF] request_id=bfb28a1a | total=18370ms | SUCCESS
+15:32:30 | INFO |   ├─ routing: 3288ms
+15:32:30 | INFO |   ├─ sql_execution: 12672ms
+15:32:30 | INFO |   └─ synthesis: 2408ms
+15:35:09 | INFO | [PERF] request_id=e9eb0547 | START | query=How many orders were placed in last year, and what's the tot...
+15:35:11 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:35:21 | INFO | [SQL] attempt_1: OK
+15:35:23 | INFO | [PERF] request_id=e9eb0547 | total=13305ms | SUCCESS
+15:35:23 | INFO |   ├─ routing: 2049ms
+15:35:23 | INFO |   ├─ sql_execution: 10025ms
+15:35:23 | INFO |   └─ synthesis: 1229ms
+15:38:56 | INFO | [PERF] request_id=ea5a7da8 | START | query=How many orders were placed in the previous calendar year, a...
+15:38:58 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:39:07 | INFO | [SQL] attempt_1: OK
+15:39:09 | INFO | [PERF] request_id=ea5a7da8 | total=13799ms | SUCCESS
+15:39:09 | INFO |   ├─ routing: 2328ms
+15:39:09 | INFO |   ├─ sql_execution: 8772ms
+15:39:09 | INFO |   └─ synthesis: 2697ms
+15:42:46 | INFO | [PERF] request_id=a7545f4d | START | query=How many orders were placed in the previous calendar year, a...
+15:42:49 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:43:13 | INFO | [SQL] attempt_2: OK
+15:43:15 | INFO | [PERF] request_id=a7545f4d | total=28772ms | SUCCESS
+15:43:15 | INFO |   ├─ routing: 2765ms
+15:43:15 | INFO |   ├─ sql_execution: 24314ms
+15:43:15 | INFO |   └─ synthesis: 1691ms
+15:44:14 | INFO | [PERF] request_id=568a5682 | START | query=How many orders were placed in the previous calendar year, a...
+15:44:17 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:44:37 | INFO | [SQL] attempt_2: OK
+15:44:38 | INFO | [PERF] request_id=568a5682 | total=23957ms | SUCCESS
+15:44:38 | INFO |   ├─ routing: 2049ms
+15:44:38 | INFO |   ├─ sql_execution: 20884ms
+15:44:38 | INFO |   └─ synthesis: 1021ms
+15:47:42 | INFO | [PERF] request_id=9cfb00c8 | START | query=How many orders were placed in the previous calendar year, a...
+15:47:44 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:48:06 | INFO | [SQL] attempt_2: OK
+15:48:08 | INFO | [PERF] request_id=9cfb00c8 | total=26128ms | SUCCESS
+15:48:08 | INFO |   ├─ routing: 1855ms
+15:48:08 | INFO |   ├─ sql_execution: 22611ms
+15:48:08 | INFO |   └─ synthesis: 1661ms
+15:48:39 | INFO | [PERF] request_id=ff59bd3a | START | query=How many orders were placed in the previous calendar year, a...
+15:48:41 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:49:03 | INFO | [SQL] attempt_2: OK
+15:49:04 | INFO | [PERF] request_id=ff59bd3a | total=25498ms | SUCCESS
+15:49:04 | INFO |   ├─ routing: 2565ms
+15:49:04 | INFO |   ├─ sql_execution: 21600ms
+15:49:04 | INFO |   └─ synthesis: 1329ms
+15:49:31 | INFO | [PERF] request_id=90ddec13 | START | query=How many orders were placed in the previous calendar year, a...
+15:49:33 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:49:56 | INFO | [SQL] attempt_2: OK
+15:49:58 | INFO | [PERF] request_id=90ddec13 | total=26787ms | SUCCESS
+15:49:58 | INFO |   ├─ routing: 1782ms
+15:49:58 | INFO |   ├─ sql_execution: 23287ms
+15:49:58 | INFO |   └─ synthesis: 1717ms
+15:50:34 | INFO | [PERF] request_id=00fce3e5 | START | query=How many orders were placed in the previous calendar year, a...
+15:50:38 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:50:49 | INFO | [SQL] attempt_1: OK
+15:50:50 | INFO | [PERF] request_id=00fce3e5 | total=16404ms | SUCCESS
+15:50:50 | INFO |   ├─ routing: 3910ms
+15:50:50 | INFO |   ├─ sql_execution: 11281ms
+15:50:50 | INFO |   └─ synthesis: 1212ms
+15:51:25 | INFO | [PERF] request_id=112221e0 | START | query=How many orders were placed in the previous calendar year, a...
+15:51:27 | INFO | [ROUTING] selected_tools=['sql_accessor']
+15:51:41 | INFO | [SQL] attempt_1: OK
+15:51:42 | INFO | [PERF] request_id=112221e0 | total=16281ms | SUCCESS
+15:51:42 | INFO |   ├─ routing: 1747ms
+15:51:42 | INFO |   ├─ sql_execution: 13508ms
+15:51:42 | INFO |   └─ synthesis: 1023ms
