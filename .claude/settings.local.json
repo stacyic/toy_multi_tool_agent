@@ -21,7 +21,10 @@
       "Bash(xargs -I {} bash -c \"echo ''=== {} ==='' && head -15 {}\")",
       "Bash(/tmp/run_test_queries.sh:*)",
       "Bash(git checkout:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix SQL generation for policy/eligibility questions\n\n- Add case-insensitive comparison rule for status fields \\(LOWER\\(\\) or COLLATE NOCASE\\)\n- Add guidance for eligibility questions to retrieve data without policy filters\n- Update semantic evaluator to understand SQL retrieves data, policy comes from RAG\n- Fixes \"Can I return order X?\" returning no results when order exists\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)"
     ]
   }
 }
